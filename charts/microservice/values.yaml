@@ -1,0 +1,12 @@
+name: ""
+namespace: "default"
+
+deployment:
+  replicas: 1
+  image:
+    repository: ""
+    tag: ""
+  envs: []
+
+sealedSecrets:
+  vars: []
