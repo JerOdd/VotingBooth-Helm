@@ -10,3 +10,6 @@ deployment:
 
 sealedSecrets:
   vars: []
+
+ingress:
+  host: ""
