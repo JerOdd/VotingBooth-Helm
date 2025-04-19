@@ -1,3 +1,4 @@
+{{- define "common.sealedSecret" -}}
 apiVersion: bitnami.com/v1alpha1
 kind: SealedSecret
 metadata:
@@ -8,3 +9,4 @@ spec:
     {{ range $k, $v := .Values.sealedSecret.vars -}}
     {{ $k }}: {{ $v | quote }}
     {{ end }}
+{{- end }}

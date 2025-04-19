@@ -1,3 +1,4 @@
+{{- define "common.ingress" -}}
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -18,3 +19,4 @@ spec:
             name: {{ .Values.name }}
             port:
               number: 80
+{{- end }}

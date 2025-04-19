@@ -1,3 +1,4 @@
+{{- define "common.deployment" -}}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -32,3 +33,4 @@ spec:
             - secretRef:
                 name: {{ .Values.name }}
         {{- end}}
+{{- end }}

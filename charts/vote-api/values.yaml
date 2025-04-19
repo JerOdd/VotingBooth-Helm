@@ -1,5 +1,5 @@
-name: ""
-namespace: "default"
+name: "vote-api"
+namespace: ""
 
 deployment:
   replicas: 1
