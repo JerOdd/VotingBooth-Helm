@@ -8,7 +8,7 @@ deployment:
     tag: ""
   envs: []
 
-sealedSecrets:
+sealedSecret:
   vars: []
 
 ingress:

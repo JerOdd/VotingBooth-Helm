@@ -28,9 +28,11 @@ spec:
               value: {{ $v | quote }}
             {{- end }}
         {{- end }}
-        {{- if .Values.sealedSecret.vars }}
+        {{- if .Values.sealedSecrets }}  # Changed from .Values.sealedSecret
         envFrom:
+            {{- if .Values.sealedSecrets.vars }}  # Changed from .Values.sealedSecret.vars
             - secretRef:
                 name: {{ .Values.name }}
-        {{- end}}
+            {{- end }}
+        {{- end }}
 {{- end }}
