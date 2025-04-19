@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  vote-api:
+  - apiVersion: v2
+    created: "2025-04-19T16:20:43.880886+02:00"
+    description: vote-api charts for VotingBooth
+    digest: d6a478f418911e3aa2a43b54b80c06fd53def5859d18cb0ea3e5a4258c9b704a
+    name: vote-api
+    type: application
+    urls:
+    - https://github.com/JerOdd/VotingBooth-Helm/charts/vote-api-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-04-19T16:20:43.880631+02:00"
