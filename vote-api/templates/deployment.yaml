@@ -1,1 +1,1 @@
-{{- include (print .Template.BasePath "/common/deployment.tpl") . | nindent 0 }}
+{{- include "common/deployment.tpl" . | nindent 0 }}
