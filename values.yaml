@@ -1,4 +1,4 @@
-name: "vote-api"
+name: ""
 namespace: ""
 
 deployment:
@@ -8,8 +8,9 @@ deployment:
     tag: ""
   envs: []
 
-sealedSecret:
-  vars: []
+sealedSecrets:
+  vars: {}
 
 ingress:
+  enabled: false
   host: ""

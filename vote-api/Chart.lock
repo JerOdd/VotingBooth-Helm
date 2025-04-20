@@ -1,6 +1,0 @@
-dependencies:
-- name: common
-  repository: https://jerodd.github.io/VotingBooth-Helm
-  version: 0.1.0
-digest: sha256:bdc0dd296308e14f3ba8889cc2e0ad803efe8134aaaa4c20211cc4ff190db48a
-generated: "2025-04-19T22:05:36.787392+02:00"

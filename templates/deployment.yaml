@@ -1,11 +1,11 @@
-{{- define "common.deployment" -}}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Values.name }}
   namespace: {{ .Values.namespace }}
   labels:
-    app: {{ .Values.name }}
+    app.kubernetes.io/name: {{ .Values.name }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
 spec:
   replicas: {{ .Values.deployment.replicas }}
   selector:
@@ -28,11 +28,10 @@ spec:
               value: {{ $v | quote }}
             {{- end }}
         {{- end }}
-        {{- if .Values.sealedSecrets }}  # Changed from .Values.sealedSecret
+        {{- if .Values.sealedSecrets }}
         envFrom:
-            {{- if .Values.sealedSecrets.vars }}  # Changed from .Values.sealedSecret.vars
+            {{- if .Values.sealedSecrets.vars }}
             - secretRef:
                 name: {{ .Values.name }}
             {{- end }}
         {{- end }}
-{{- end }}
