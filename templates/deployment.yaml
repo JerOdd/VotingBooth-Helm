@@ -23,16 +23,16 @@ spec:
         ports:
         - containerPort: 8080
         {{- with .Values.deployment.envs }}
-          env:
-            {{- range $k, $v := . }}
-            - name: {{ $k | quote }}
-              value: {{ $v | quote }}
-            {{- end }}
+        env:
+          {{- range $k, $v := . }}
+          - name: {{ $k | quote }}
+            value: {{ $v | quote }}
+          {{- end }}
         {{- end }}
         {{- if .Values.sealedSecrets }}
         envFrom:
-            {{- if .Values.sealedSecrets.vars }}
-            - secretRef:
-                name: {{ .Values.name }}
-            {{- end }}
+          {{- if .Values.sealedSecrets.vars }}
+          - secretRef:
+              name: {{ .Values.name }}
+          {{- end }}
         {{- end }}
