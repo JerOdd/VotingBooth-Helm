@@ -6,6 +6,7 @@ deployment:
   image:
     repository: ""
     tag: ""
+  imagePullPolicy: "Always"
   envs: []
 
 sealedSecrets:
