@@ -9,11 +9,12 @@ metadata:
 spec:
   replicas: {{ .Values.deployment.replicas }}
   selector:
-    app.kubernetes.io/name: {{ .Values.name }}
+    matchLabels:
+      app.kubernetes.io/name: {{ .Values.name }}
   template:
     metadata:
       labels:
-        app: {{ .Values.name }}
+        app.kubernetes.io/name: {{ .Values.name }}
     spec:
       containers:
       - name: {{ .Values.name }}
