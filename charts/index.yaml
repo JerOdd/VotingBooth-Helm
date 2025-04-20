@@ -2,12 +2,12 @@ apiVersion: v1
 entries:
   votingbooth-helm:
   - apiVersion: v2
-    created: "2025-04-20T08:17:01.382488+02:00"
+    created: "2025-04-20T14:30:40.88374+02:00"
     description: helm charts for VotingBooth
     digest: e43f634c1c6480f06f44e1f7a1be3a0e4d5dadeee38c43cc30cdce3f11caf61d
     name: votingbooth-helm
     type: application
     urls:
-    - https://jerodd.github.io/VotingBooth-Helm/votingbooth-helm-0.1.0.tgz
+    - https://jerodd.github.io/VotingBooth-Helm/charts/votingbooth-helm-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-20T08:17:01.38002+02:00"
+generated: "2025-04-20T14:30:40.881497+02:00"
