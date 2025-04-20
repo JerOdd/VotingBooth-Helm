@@ -1,6 +1,17 @@
+name: ""
+namespace: ""
+
 deployment:
   replicas: 1
+  image:
+    repository: ""
+    tag: ""
   imagePullPolicy: "Always"
+  envs: []
+
+sealedSecrets:
+  vars: {}
 
 ingress:
   enabled: false
+  host: ""
